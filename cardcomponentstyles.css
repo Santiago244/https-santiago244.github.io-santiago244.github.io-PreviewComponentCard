@@ -1,0 +1,308 @@
+@media only screen and (max-width:1000px){
+/* Mobile Design */
+html *{
+    font-family:'Inter', 'Open Sans', sans-serif;
+    color: #fff;
+    --background-all:#090b1a;
+    --card-background:#1b1938;
+    --violet-word:#aa5cdb;
+    --bg-img:#7116e8;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-all);
+}
+body *{
+    margin: 0;
+    padding: 0;
+
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20% 5% 20% 5%;
+}
+/* principalcard is a section. */
+/* .principalcard{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+} */
+/* Leftpart is a div that have the content of the card */
+.leftpart{
+    width: 85%;
+    height:auto;
+    background-color: var(--card-background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius:12px;
+    padding-bottom:40px ;
+    
+}
+/* The container of the image */
+.containerimg{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.backdropfilter{
+    position: absolute;
+    border-radius: 10px 10px 0 0;
+    background-color:var(--bg-img);
+    opacity: .6;
+    width: 100%;
+    height: 100%;
+}
+
+.containerimg img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.title{
+    width: 80%;
+}
+
+.colorpurple{
+    color: var(--violet-word);
+}
+
+h1{
+    text-align: center;
+    font-size: 2rem;
+    margin:10% 0 10% 0;
+}
+
+.p2{
+    text-align: center;
+    font-size: 1.1rem;
+    color: #b0b0b0;
+}
+
+.cont-statisticspart{
+    margin-top: 10%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.companies{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10%;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.templates{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10%;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.queries{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10%;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+.textsoft{
+    color:#9f9f9f;
+    font-weight:lighter;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    font-variant: small-caps;
+    letter-spacing: 2px;
+}
+.cont-leftpart{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+}
+
+/* Desktop Design */
+@media only screen and (min-width:1000px) {
+ html *{
+    font-family:'Inter', 'Open Sans', sans-serif;
+    color: #fff;
+    --background-all:#090b1a;
+    --card-background:#1b1938;
+    --violet-word:#aa5cdb;
+    --bg-img:#7116e8;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-all);
+}
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+main{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+/* principalcard is a section. */
+/* .principalcard{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+} */
+/* Leftpart is a div that have the content of the card */
+.leftpart{
+    width: 80%;
+    height: 70%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--card-background);
+    /* border:2px solid #7116e8; */
+    border-radius: 5px;
+    flex-shrink: 1;
+}
+
+/* The container of the image */
+.containerimg{
+    position: relative;
+    width: 60%;
+    height: 100%;
+    border-radius:0 5px 5px 0 ;
+}
+
+.containerimg img{
+    width: 100%;
+    height: 100%;
+    border-radius:0 5px 5px 0 ;
+}
+.backdropfilter{
+    position: absolute;
+    background-color: var(--bg-img);
+    opacity: .4;
+    width:100%;
+    height: 100%;
+    border-radius:0 5px 5px 0 ;
+    top: 0;
+    left: 0;
+}
+.cont-leftpart{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position: relative;
+    padding-right: 10%;
+
+}
+.cont-leftpart::before{
+    content: '';
+    position:absolute;
+    bottom: 0;
+    width: 40%;
+    height: 2px;
+    background:transparent;
+    animation: rotate 2s forwards infinite alternate;
+}
+
+.cont-leftpart::after{
+    content: '';
+    position:absolute;
+    width: 40%;
+    height: 2px;
+    background: transparent;
+    animation: rotate 2s backwards infinite alternate-reverse;
+}
+@keyframes rotate {
+    0%{
+        position: absolute;
+        left:0%;
+        background-color: #112ae7;
+    }
+    100%{
+        position: absolute;
+        left: 60%;
+        background-color: #7116e8;
+    }
+}
+.title{
+    flex-shrink: 2;
+    width: 95%;
+    padding: 10%;
+}
+
+.colorpurple{
+    color: var(--violet-word);
+    
+}
+h1{
+    font-size: 170%;
+    margin-bottom: 10%;
+}
+.cont-statisticspart{
+    width: 200%;
+    height: 50vh;
+    top: 120%;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: centers;
+}
+.p2{
+    font-size:1.2rem;
+    color: #b0b0b0;
+    line-height: 1.5;
+}
+.companies{
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+.companies:hover{
+
+}
+.templates{
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+.templates:hover{
+
+}
+.queries{
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+.queries:hover{
+
+}
+.textsoft{
+    color:#dedede;
+    font-weight:lighter;
+    margin-top: 10px;
+    font-variant: small-caps;
+    font-size: 1.5rem;
+}
+}
